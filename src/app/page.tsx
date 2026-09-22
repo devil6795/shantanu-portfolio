@@ -84,7 +84,7 @@ export default function Home() {
 
               {/* INTERACTIVE BUBBLES - HIGHLIGHT (Glowing) */}
               <div className="absolute -top-12 right-4 sm:right-10 z-30 animate-float-delayed">
-                <a href="https://velorix.com" target="_blank" rel="noopener noreferrer" className="px-5 py-2.5 rounded-full border border-orange-500/30 bg-orange-500/10 backdrop-blur-xl text-xs font-mono text-orange-200 hover:scale-110 hover:border-orange-500 hover:text-white hover:bg-orange-500/20 transition-all cursor-pointer shadow-[0_0_20px_rgba(255,128,0,0.15)] flex items-center gap-2 group">
+                <a href="https://velorix-uav.vercel.app/" target="_blank" rel="noopener noreferrer" className="px-5 py-2.5 rounded-full border border-orange-500/30 bg-orange-500/10 backdrop-blur-xl text-xs font-mono text-orange-200 hover:scale-110 hover:border-orange-500 hover:text-white hover:bg-orange-500/20 transition-all cursor-pointer shadow-[0_0_20px_rgba(255,128,0,0.15)] flex items-center gap-2 group">
                   <span className="w-1.5 h-1.5 rounded-full bg-orange-500 animate-pulse"></span>
                   VELORIX UAV
                   <svg className="w-3 h-3 opacity-50 group-hover:opacity-100 transition-opacity" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>

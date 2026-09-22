@@ -8,7 +8,7 @@ export default function Projects() {
       category: "Cinematic & Freestyle",
       description: "Designed, engineered, and fine-tuned a complete spectrum of First-Person View (FPV) drones. Ranging from ultra-agile 3-inch freestyle quads to massive 16-inch cine-lifters capable of carrying professional cinematic payloads.",
       tech: ["Betaflight", "ExpressLRS", "Video Transmission", "Custom Tuning"],
-      image: "https://images.unsplash.com/photo-1579829366248-204fe8413f31?q=80&w=1200",
+      image: "/hardware_stack.jpg",
       featured: true,
     },
     {
@@ -17,7 +17,7 @@ export default function Projects() {
       category: "AgriTech UAV",
       description: "Large-scale drone engineered for modern agriculture. Features autonomous waypoint navigation, specialized fluid distribution systems, and ruggedized architecture for reliable operation in harsh field conditions.",
       tech: ["ArduCopter", "GPS / RTK", "Payload Distribution", "Power Systems"],
-      image: "https://images.unsplash.com/photo-1508614589041-895b88991e3e?q=80&w=1200",
+      image: "/expo_drone.jpg",
       featured: false,
     },
     {
@@ -26,7 +26,7 @@ export default function Projects() {
       category: "UAV Architecture",
       description: "Custom-built multirotor architecture utilizing ArduPilot and Pixhawk 6X. Designed for autonomous mapping, structural testing, and high-payload industrial deployments.",
       tech: ["ArduPilot", "Pixhawk 6X", "High-Torque BLDC", "Telemetry"],
-      image: "https://images.unsplash.com/photo-1527443195645-1133f7f28990?q=80&w=1200",
+      image: "/drone_flight.jpg",
       featured: false,
     },
     {

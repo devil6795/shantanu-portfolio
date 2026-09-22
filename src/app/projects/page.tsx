@@ -17,7 +17,7 @@ export default function Projects() {
       category: "AgriTech UAV",
       description: "Large-scale drone engineered for modern agriculture. Features autonomous waypoint navigation, specialized fluid distribution systems, and ruggedized architecture for reliable operation in harsh field conditions.",
       tech: ["ArduCopter", "GPS / RTK", "Payload Distribution", "Power Systems"],
-      image: "https://placehold.co/1200x800/111111/333333?text=Awaiting+Image",
+      image: "",
       featured: false,
     },
     {
@@ -26,7 +26,7 @@ export default function Projects() {
       category: "UAV Architecture",
       description: "Custom-built multirotor architecture utilizing ArduPilot and Pixhawk 6X. Designed for autonomous mapping, structural testing, and high-payload industrial deployments.",
       tech: ["ArduPilot", "Pixhawk 6X", "High-Torque BLDC", "Telemetry"],
-      image: "https://placehold.co/1200x800/111111/333333?text=Awaiting+Image",
+      image: "",
       featured: false,
     },
     {
@@ -70,21 +70,23 @@ export default function Projects() {
             <div 
               key={project.id}
               className={`group relative rounded-[2rem] overflow-hidden border border-white/5 bg-zinc-950/50 backdrop-blur-sm transition-all duration-500 hover:border-orange-500/30 hover:bg-zinc-900/80 ${
-                project.featured ? "flex flex-col md:flex-row h-auto md:h-[450px]" : "flex flex-col md:flex-row h-auto md:h-[300px]"
+                project.image ? (project.featured ? "flex flex-col md:flex-row h-auto md:h-[450px]" : "flex flex-col md:flex-row h-auto md:h-[300px]") : "flex flex-col h-auto"
               }`}
             >
-              {/* Image Section */}
-              <div className={`relative overflow-hidden ${project.featured ? "w-full md:w-3/5 h-64 md:h-full" : "w-full md:w-2/5 h-64 md:h-full"}`}>
-                <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-zinc-950/90 via-zinc-950/20 to-transparent z-10"></div>
-                <img 
-                  src={project.image} 
-                  alt={project.title}
-                  className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-in-out opacity-80 group-hover:opacity-100"
-                />
-              </div>
+              {/* Image Section - Optional */}
+              {project.image && (
+                <div className={`relative overflow-hidden shrink-0 ${project.featured ? "w-full md:w-3/5 h-64 md:h-full" : "w-full md:w-2/5 h-64 md:h-full"}`}>
+                  <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-zinc-950/90 via-zinc-950/20 to-transparent z-10"></div>
+                  <img 
+                    src={project.image} 
+                    alt={project.title}
+                    className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-in-out opacity-80 group-hover:opacity-100"
+                  />
+                </div>
+              )}
 
               {/* Content Section */}
-              <div className={`relative z-20 flex flex-col justify-center p-8 sm:p-12 ${project.featured ? "w-full md:w-2/5" : "w-full md:w-3/5"}`}>
+              <div className={`relative z-20 flex flex-col justify-center p-8 sm:p-12 ${!project.image ? "w-full" : project.featured ? "w-full md:w-2/5" : "w-full md:w-3/5"}`}>
                 
                 <div className="mb-4">
                   <span className="text-[10px] font-mono text-orange-400 tracking-widest uppercase uppercase bg-orange-500/10 px-3 py-1.5 rounded-full border border-orange-500/20">

@@ -3,13 +3,31 @@ import Link from "next/link";
 export default function Projects() {
   const projects = [
     {
-      id: "velorix-heavy-lift",
-      title: "VELORIX Heavy-Lift Platform",
+      id: "fpv-drones",
+      title: "Custom FPV Drones (3\" to 16\")",
+      category: "Cinematic & Freestyle",
+      description: "Designed, engineered, and fine-tuned a complete spectrum of First-Person View (FPV) drones. Ranging from ultra-agile 3-inch freestyle quads to massive 16-inch cine-lifters capable of carrying professional cinematic payloads.",
+      tech: ["Betaflight", "ExpressLRS", "Video Transmission", "Custom Tuning"],
+      image: "https://images.unsplash.com/photo-1579829366248-204fe8413f31?q=80&w=1200",
+      featured: true,
+    },
+    {
+      id: "agri-drone",
+      title: "Precision Agricultural Drone",
+      category: "AgriTech UAV",
+      description: "Large-scale drone engineered for modern agriculture. Features autonomous waypoint navigation, specialized fluid distribution systems, and ruggedized architecture for reliable operation in harsh field conditions.",
+      tech: ["ArduCopter", "GPS / RTK", "Payload Distribution", "Power Systems"],
+      image: "https://images.unsplash.com/photo-1508614589041-895b88991e3e?q=80&w=1200",
+      featured: false,
+    },
+    {
+      id: "heavy-lift-drone",
+      title: "Heavy-Lift Industrial Drone",
       category: "UAV Architecture",
       description: "Custom-built multirotor architecture utilizing ArduPilot and Pixhawk 6X. Designed for autonomous mapping, structural testing, and high-payload industrial deployments.",
-      tech: ["ArduPilot", "Pixhawk 6X", "BLDC Motors", "Telemetry"],
+      tech: ["ArduPilot", "Pixhawk 6X", "High-Torque BLDC", "Telemetry"],
       image: "https://images.unsplash.com/photo-1527443195645-1133f7f28990?q=80&w=1200",
-      featured: true,
+      featured: false,
     },
     {
       id: "voice-ai-agent",
@@ -18,24 +36,6 @@ export default function Projects() {
       description: "Android application powered by AI capable of monitoring calls, delivering AI-generated greetings, and intelligently extracting caller intent and data in real-time.",
       tech: ["Kotlin", "Voice AI", "Telephony API", "DataStore"],
       image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=800",
-      featured: false,
-    },
-    {
-      id: "embedded-lidar",
-      title: "Embedded LiDAR Array",
-      category: "Hardware & Robotics",
-      description: "Integration of TF-Luna LiDAR sensors with ESP32 microcontrollers for high-precision spatial awareness, environmental mapping, and obstacle avoidance.",
-      tech: ["ESP32", "LiDAR", "Sensor Fusion", "C++"],
-      image: "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800",
-      featured: false,
-    },
-    {
-      id: "n8n-pipeline",
-      title: "Market Intelligence Agent",
-      category: "Automation",
-      description: "Automated N8N workflow acting as an autonomous agent. Continuously monitors the UAV industry, tracking competitors, component releases, and market trends.",
-      tech: ["N8N", "LLMs", "Data Pipelines", "Scraping"],
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800",
       featured: false,
     }
   ];

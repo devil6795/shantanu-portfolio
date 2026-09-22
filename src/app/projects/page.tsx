@@ -30,6 +30,15 @@ export default function Projects() {
       featured: false,
     },
     {
+      id: "wall-sticking-drone",
+      title: "Wall-Sticking Drone",
+      category: "R&D / Specialized UAV",
+      description: "Developed a specialized wall-sticking drone during an R&D internship at CSIR-CBRI (Central Building Research Institute). Engineered specifically for structural inspection, the UAV is capable of maintaining stable physical contact with vertical surfaces.",
+      tech: ["CSIR-CBRI", "Aerodynamics", "Structural Inspection", "R&D"],
+      image: "",
+      featured: false,
+    },
+    {
       id: "voice-ai-agent",
       title: "Autonomous Call Assistant",
       category: "AI Agents",
